@@ -1,0 +1,63 @@
+2026-01-17 17:27:54,131 - INFO - Connecting to 149.154.167.91:443/TcpFull...
+2026-01-17 17:27:54,281 - INFO - Connection to 149.154.167.91:443/TcpFull complete!
+2026-01-17 17:27:55,643 - INFO - Scraping channel: lobelia4cosmetics
+2026-01-17 18:07:37,733 - INFO - Saved 2499 messages \u2192 D:\week-5\medical-telegram-warehouse\data\raw\telegram_messages\2026-01-17\lobelia4cosmetics.json
+2026-01-17 18:07:37,740 - INFO - Scraping channel: tikvahpharma
+2026-01-17 18:09:17,529 - WARNING - Server closed the connection: [WinError 121] The semaphore timeout period has expired
+2026-01-17 18:09:17,540 - INFO - Connection closed while receiving data: [WinError 121] The semaphore timeout period has expired
+2026-01-17 18:09:17,543 - INFO - Closing current connection to begin reconnect...
+2026-01-17 18:09:17,549 - INFO - <class 'OSError'> during disconnect: [WinError 121] The semaphore timeout period has expired
+2026-01-17 18:09:17,552 - INFO - Connecting to 149.154.167.91:443/TcpFull...
+2026-01-17 18:09:20,381 - INFO - Connection to 149.154.167.91:443/TcpFull complete!
+2026-01-17 18:10:49,006 - WARNING - Server closed the connection: [WinError 121] The semaphore timeout period has expired
+2026-01-17 18:10:49,007 - INFO - Connection closed while receiving data: [WinError 121] The semaphore timeout period has expired
+2026-01-17 18:10:49,007 - INFO - Closing current connection to begin reconnect...
+2026-01-17 18:10:49,008 - INFO - <class 'OSError'> during disconnect: [WinError 121] The semaphore timeout period has expired
+2026-01-17 18:10:49,009 - INFO - Connecting to 149.154.167.91:443/TcpFull...
+2026-01-17 18:10:49,263 - INFO - Connection to 149.154.167.91:443/TcpFull complete!
+2026-01-17 18:12:32,319 - INFO - File lives in another DC
+2026-01-17 18:12:32,495 - INFO - Connecting to 149.154.167.50:443/TcpFull...
+2026-01-17 18:12:34,739 - INFO - Connection to 149.154.167.50:443/TcpFull complete!
+2026-01-17 18:12:34,740 - INFO - Exporting auth for new borrowed sender in DcOption(id=2, ip_address='149.154.167.50', port=443, ipv6=False, media_only=False, tcpo_only=False, cdn=False, static=False, this_port_only=False, secret=None)
+2026-01-17 18:12:49,316 - INFO - File lives in another DC
+2026-01-17 18:13:38,938 - INFO - File lives in another DC
+
+2026-01-17 18:13:48,082 - INFO - File lives in another DC
+2026-01-17 18:15:01,818 - INFO - Disconnecting from 149.154.167.50:443/TcpFull...
+2026-01-17 18:15:01,819 - INFO - Disconnection from 149.154.167.50:443/TcpFull complete!
+2026-01-17 18:17:14,472 - INFO - File lives in another DC
+2026-01-17 18:17:14,473 - INFO - Connecting to 149.154.167.50:443/TcpFull...
+2026-01-17 18:17:14,796 - INFO - Connection to 149.154.167.50:443/TcpFull complete!
+2026-01-17 18:19:02,088 - INFO - Disconnecting borrowed sender for DC 2
+2026-01-17 18:19:02,088 - INFO - Disconnecting from 149.154.167.50:443/TcpFull...
+2026-01-17 18:19:02,090 - INFO - Disconnection from 149.154.167.50:443/TcpFull complete!
+2026-01-17 18:22:06,945 - INFO - File lives in another DC
+2026-01-17 18:22:06,946 - INFO - Connecting to 149.154.167.50:443/TcpFull...
+2026-01-17 18:22:07,209 - INFO - Connection to 149.154.167.50:443/TcpFull complete!
+2026-01-17 18:24:02,616 - INFO - Disconnecting borrowed sender for DC 2
+2026-01-17 18:24:02,616 - INFO - Disconnecting from 149.154.167.50:443/TcpFull...
+2026-01-17 18:24:02,617 - INFO - Disconnection from 149.154.167.50:443/TcpFull complete!
+2026-01-17 18:32:42,680 - INFO - File lives in another DC
+2026-01-17 18:32:42,680 - INFO - Connecting to 149.154.167.50:443/TcpFull...
+2026-01-17 18:32:42,808 - INFO - Connection to 149.154.167.50:443/TcpFull complete!
+2026-01-17 18:33:48,327 - INFO - File lives in another DC
+2026-01-17 18:35:03,567 - INFO - Disconnecting borrowed sender for DC 2
+2026-01-17 18:35:03,567 - INFO - Disconnecting from 149.154.167.50:443/TcpFull...
+2026-01-17 18:35:03,567 - INFO - Disconnection from 149.154.167.50:443/TcpFull complete!
+2026-01-17 19:00:15,603 - INFO - File lives in another DC
+2026-01-17 19:00:15,604 - INFO - Connecting to 149.154.167.50:443/TcpFull...
+2026-01-17 19:00:15,804 - INFO - Connection to 149.154.167.50:443/TcpFull complete!
+2026-01-17 19:02:05,212 - INFO - Disconnecting borrowed sender for DC 2
+2026-01-17 19:02:05,212 - INFO - Disconnecting from 149.154.167.50:443/TcpFull...
+2026-01-17 19:02:05,213 - INFO - Disconnection from 149.154.167.50:443/TcpFull complete!
+2026-01-17 19:04:38,274 - WARNING - Server closed the connection: [WinError 121] The semaphore timeout period has expired
+2026-01-17 19:04:38,275 - INFO - Connection closed while receiving data: [WinError 121] The semaphore timeout period has expired
+2026-01-17 19:04:38,276 - INFO - Closing current connection to begin reconnect...
+2026-01-17 19:04:38,277 - INFO - <class 'OSError'> during disconnect: [WinError 121] The semaphore timeout period has expired
+2026-01-17 19:04:38,278 - INFO - Connecting to 149.154.167.91:443/TcpFull...
+2026-01-17 19:04:48,289 - WARNING - Attempt 1 at connecting failed: TimeoutError: 
+2026-01-17 19:04:59,316 - WARNING - Attempt 2 at connecting failed: TimeoutError: 
+2026-01-17 19:28:04,010 - INFO - Got difference for account updates
+2026-01-17 23:50:49,893 - INFO - Saved 76 messages \u2192 D:\week-5\medical-telegram-warehouse\data\raw\telegram_messages\2026-01-17\CheMed123.json
+2026-01-17 23:50:49,918 - INFO - Disconnecting from 149.154.167.91:443/TcpFull...
+2026-01-17 23:50:49,932 - INFO - Disconnection from 149.154.167.91:443/TcpFull complete!
