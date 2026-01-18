@@ -1,0 +1,24 @@
+name: 'medical_warehouse'
+version: '1.0'
+config-version: 2
+
+profile: 'medical_warehouse'  # must match your profiles.yml
+
+# Folder where models live
+model-paths: ["models"]
+
+# Optional: staging and marts folder mapping
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+
+target-path: "target"          # compiled SQL files
+clean-targets:
+  - "target"
+  - "dbt_modules"
+
+models:
+  medical_warehouse:
+    staging:
+      +materialized: view    # staging models as views (can change to table)
+    marts:
+      +materialized: table   # fact/dim tables as tables

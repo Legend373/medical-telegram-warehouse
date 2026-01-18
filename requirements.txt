@@ -1,3 +1,8 @@
 telethon
 python-dotenv
 jupyterlab
+psycopg2-binary 
+sqlalchemy 
+pandas    
+dbt-postgres
+python-dotenv

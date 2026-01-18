@@ -1,0 +1,67 @@
+version: 2
+
+models:
+  - name: dim_channels
+    description: "Contains one row per Telegram channel with aggregate stats"
+    columns:
+      - name: channel_key
+        description: "Surrogate key for channel"
+        tests: [not_null, unique]
+      - name: channel_name
+        description: "Telegram channel name"
+      - name: channel_type
+        description: "Channel category (Pharmaceutical, Cosmetics, Medical)"
+      - name: first_post_date
+        description: "Date of first message posted"
+      - name: last_post_date
+        description: "Date of last message posted"
+      - name: total_posts
+        description: "Total number of messages from channel"
+      - name: avg_views
+        description: "Average number of views per message"
+
+  - name: dim_dates
+    description: "Date dimension for time-based analysis"
+    columns:
+      - name: date_key
+        description: "YYYYMMDD integer key for the date"
+        tests: [not_null, unique]
+      - name: full_date
+        description: "Actual date"
+      - name: day_of_week
+        description: "0=Sunday, 6=Saturday"
+      - name: day_name
+        description: "Name of the day (Monday, Tuesday, etc.)"
+      - name: week_of_year
+      - name: month
+      - name: month_name
+      - name: quarter
+      - name: year
+      - name: is_weekend
+        description: "True if the date is Saturday or Sunday"
+
+  - name: fct_messages
+    description: "Fact table with one row per Telegram message"
+    columns:
+      - name: message_id
+        description: "Unique message identifier"
+        tests: [not_null, unique]
+      - name: channel_key
+        description: "FK to dim_channels"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_channels')
+              field: channel_key
+      - name: date_key
+        description: "FK to dim_dates"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_dates')
+              field: date_key
+      - name: message_text
+      - name: message_length
+      - name: view_count
+      - name: forward_count
+      - name: has_image
