@@ -1,11 +1,11 @@
 from sqlalchemy.orm import Session
 from sqlalchemy import text
 
-def get_top_products(db: Session, limit: int):
+def get_top_products(db: Session, limit: int = 10):
     query = text("""
         SELECT word AS term, COUNT(*) AS count
         FROM (
-            SELECT unnest(string_to_array(lower(text), ' ')) AS word
+            SELECT unnest(string_to_array(lower(message_text), ' ')) AS word
             FROM analytics.fct_mmessages
         ) t
         WHERE length(word) > 3
@@ -13,7 +13,9 @@ def get_top_products(db: Session, limit: int):
         ORDER BY count DESC
         LIMIT :limit
     """)
-    return db.execute(query, {"limit": limit}).fetchall()
+    # .mappings() converts rows into dict-like objects
+    result = db.execute(query, {"limit": limit}).mappings().all()
+    return result
 
 
 def get_channel_activity(db: Session, channel_name: str):
