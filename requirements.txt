@@ -7,3 +7,8 @@ pandas
 dbt-postgres
 python-doten
 ultralytics
+fastapi 
+uvicorn 
+sqlalchemy 
+psycopg2-binary 
+pydantic
